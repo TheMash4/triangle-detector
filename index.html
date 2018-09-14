@@ -8,11 +8,35 @@
 <div id="title">
 <h3>TRIANGLE CHECKER</h3>
 <p>Please input any 3 sides to check what kind of triangle it is.</p>
-        <input type="integer" name="input1" value="" ><br>
-        <input type="integer" name="input2" value=""><br>
-        <input type="integer" name="input3" value=""><br>
-        <button id="myBtn" onclick="myFunction()" >Button</button>
+        <input type="number" id="input1" value="" ><br>
+        <input type="number" id="input2" value=""><br>
+        <input type="number" id="input3" value=""><br>
+        <button id="myBtn" onclick="myFunction()" >SUBMIT</button>
         <input type="reset" value="Reset">        
 </div>
+
+<script>
+    function myFunction() {
+        var inputA = parseInt(document.getElementById("input1").value);
+        var inputB = parseInt(document.getElementById("input2").value);
+        var inputC = parseInt(document.getElementById("input3").value);
+        var sideA=inputA;
+        var sideB=inputB;
+        var sideC=inputC;
+    if((sideA + sideB)<=sideC ||(sideA + sideC)<=sideB||(sideB + sideC)<=sideA){
+        return alert("this is not a triangle");
+    
+    }else
+    if (sideA === sideB && sideA === sideC && sideB===sideC){
+            return alert("this is an equilateral triangle");
+    }else 
+    if
+            (sideA !== sideB !== sideC ){
+            return alert("this is triangle is a scalene");
+    }//else
+      //  return alert("this is a scalene triangle");
+                
+}
+</script>
 </body>
 </html>
