@@ -1,5 +1,7 @@
 body{
-    background-color: white;
+    background-color: rgb(77, 137, 248);
+    background-repeat: no-repeat;
+    
 }
 input[type=button], input[type=submit], input[type=reset] {
     background-color: lightblue;
