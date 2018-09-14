@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>TRIANGLES</h3>
+<p>Please input any 3 sides to check what kind of triangle it is.</p>
+
+<input name="input1" value=""><br>
+<input name="input2" value=""><br>
+<input name="input3" value=""><br>
+<button id="myBtn" onclick="myFunction()">Button</button>
+
+<script>
+function myFunction() {
+var inputA = document.getElementById("Input1").value;
+var inputB = document.getElementById("Input2").value;
+var inputC = document.getElementById("Input3").value;
+var sideA = inputA;
+var sideB = inputB;
+var sideC = inputC;
+if(sideA+sideB > sideC && sideB+sideC > sideA && sideC + sideA > sideB){
+if (sideA === sideB && sideB === sideC ){
+    return alert("this is an equilateral triangle");
+}else if
+    (sideA === sideB || sideA === sideC || sideB === sideC){
+    return alert("this is triangle is an isosceles");
+}else 
+    return alert("this is a scalene triangle");
+}else
+    return alert("this is not a triangle");
+}
+
+</script>
+</body>
+</html>
