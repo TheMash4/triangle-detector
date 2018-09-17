@@ -2,21 +2,21 @@
 <html>
 <head>
         <link rel="stylesheet" href="style.css">
-<h1 class="elegant shadow">TRIANGLE TRACKER</h1>
+<h1 class="elegantshadow">TRIANGLE TRACKER</h1>
 </head>
 <body>
 <div id="title">
 <h3>TRIANGLE CHECKER</h3>
 <p>Please input any 3 sides to check what kind of triangle it is.</p>
-        <input type="number" id="input1" value="1stNumber" ><br>
-        <input type="number" id="input2" value="2ndNumber"><br>
-        <input type="number" id="input3" value="3rdNumber"><br>
-        <button id="myBtn" onclick="myFunction()" >SUBMIT</button>
+        <input type="number" id="input1" placeholder="FIRSTSIDE" ><br>
+        <input type="number" id="input2" placeholder="SECONDSIDE" ><br>
+        <input type="number" id="input3" placeholder="THIRDSIDE" ><br>
+        <button id="myBtn" onClick="myFunction()" >SUBMIT</button>
         <input type="button" value="Reload Page" onClick="document.location.reload(true)">       
 </div>
 
 <script>
-    function myFunction() {
+function myFunction() {
         var inputA = parseInt(document.getElementById("input1").value);
         var inputB = parseInt(document.getElementById("input2").value);
         var inputC = parseInt(document.getElementById("input3").value);
@@ -25,20 +25,14 @@
         var sideC=inputC;
     if((sideA + sideB)<=sideC ||(sideA + sideC)<=sideB||(sideB + sideC)<=sideA){
         return alert("this is not a triangle");
-    
+
     }else if (sideA === sideB && sideA === sideC && sideB===sideC){
             return alert("this is an equilateral triangle");
-    }else if (sideA===sideB){
-            return alert("this is an isoscles triangle");
-    }else if (sideB===sideC){
-            return alert("this is an isoscles triangle");
-    }else if (sideA===sideC){
+    }else if (sideA===sideB || sideB===sideC || sideA===sideC){
             return alert("this is an isoscles triangle");
     }else if (sideA !== sideB  && sideB !== sideC && sideC !== sideA){
             return alert("this is triangle is a scalene");
     }
-      
-                
 }
 </script>
 </body>
