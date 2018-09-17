@@ -8,7 +8,7 @@ the java script goes along side with thw HTML of the code whereby its been separ
 * Internet access
 * Working computer/laptop
 ## Known Bugs
-The reload button clears all information that was input previously. it only gives two kind of trianles.
+The reload button clears all information that was input previously. 
 ## Technologies Used
 i used java script for the logical functions plus CSS to make things like the input box stat in the middle.all the work was stored on github
 ## Support and contact details

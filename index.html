@@ -26,11 +26,15 @@
     if((sideA + sideB)<=sideC ||(sideA + sideC)<=sideB||(sideB + sideC)<=sideA){
         return alert("this is not a triangle");
     
-    }else
-    if (sideA === sideB && sideA === sideC && sideB===sideC){
+    }else if (sideA === sideB && sideA === sideC && sideB===sideC){
             return alert("this is an equilateral triangle");
-    }else if
-        (sideA !== sideB  && sideB !== sideC && sideC !== sideA){
+    }else if (sideA===sideB){
+            return alert("this is an isoscles triangle");
+    }else if (sideB===sideC){
+            return alert("this is an isoscles triangle");
+    }else if (sideA===sideC){
+            return alert("this is an isoscles triangle");
+    }else if (sideA !== sideB  && sideB !== sideC && sideC !== sideA){
             return alert("this is triangle is a scalene");
     }
       
