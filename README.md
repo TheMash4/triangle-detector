@@ -13,7 +13,9 @@ The reload button clears all information that was input previously.
 i used java script for the logical functions plus CSS to make things like the input box stat in the middle.all the work was stored on github
 ## Support and contact details
 Incase of any problems like wrong return of values contace me SAMUEL MACHARIA through my mobile number 0740489494vor reach me throug E-mail at samedumash@gmail.com
+
 ## Project link
-here is a working link of the project in git hub https://github.com/TheMash4/triangle-detector.git
+here is a working link of the project in git hub 
+https://themash4.github.io/triangle-detector/
 ### License
 Copyright (c) 2018 SAMUEL MACHARIA
